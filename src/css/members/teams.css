@@ -1,0 +1,15 @@
+
+section{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content p{
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 13px 43px;
+    margin-top: 20px;
+    text-align: center;
+}

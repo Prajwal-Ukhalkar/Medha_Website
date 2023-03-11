@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "ubuntu";
+}
+.logo img {
+    width: 57%;
+}
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #00000082;
+}
+header .header-left {
+    display: flex;
+    align-items: left;
+   
+}
+header .header-right .logo {
+    width: 140px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    color: #cfd9e0;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: #fff;
+    transform: scale(1.1);
+}
+nav .login-signup {
+    display: none;
+}
+header .header-right {
+    display: flex;
+    align-items: left;
+}
+header .login-signup {
+    color: #cfd9e0;
+    font-weight: bold;
+}
+header .login-signup a {
+    display: inline-block;
+    color: hsla(0, 0%, 0%, 0.504);
+    background: #4ad295;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+header .header-left .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-left .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+@media only screen and (max-width: 1170px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-left .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #000000;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: left;
+        z-index: 1;
+       
+    
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+@media only screen and (max-width: 1170px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+}

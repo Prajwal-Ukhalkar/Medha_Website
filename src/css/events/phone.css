@@ -1,0 +1,67 @@
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+.heading{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.all_events{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+    height: 30vh;
+    width: 80%;
+    border: 2px solid orangered;
+    border-radius: 34px;
+    font-size: 1.3rem;
+    color: white;
+    backdrop-filter: blur(25px);
+    transition: all 0.2s ease-in 0s;
+    box-shadow: rgba(25, 16, 200, 0.3) 0px 19px 38px, rgba(31, 114, 202, 0.22) 0px 15px 12px;
+    padding: 5px;
+}
+
+.heading {
+    margin: 10px 44px;
+    justify-content: space-between;
+}
+
+.heading img{
+    height: 70px;
+}
+
+section::before{
+    content: "";
+    height: 900vh;
+    width: 200%;
+    position: absolute;
+    background: url(../../res/bg.jpeg) no-repeat center center/cover;
+    background-attachment: fixed;
+    z-index: -1;   
+    filter: blur(3px);
+}
+
+
+.all_events{
+    transition: all 0.2s ease-in 0s;
+    
+}
+
+.all_events:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+section{
+    overflow-x: hidden;
+}

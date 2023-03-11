@@ -1,0 +1,83 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Itim&family=Open+Sans&family=Pacifico&family=Rubik+Moonrocks&display=swap');
+
+@font-face {
+    font-family: virgo;
+    src: url('../../font/virgo.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ h1{
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding-top: 50px;
+    font-size: 3rem;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#dcd92b, #b8db0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: virgo;
+
+}
+
+
+.all_events{
+  
+    text-align: center;
+    height: 30vh;
+    width: 20%;
+    border: 2px solid orangered;
+    border-radius: 34px;
+    font-size: 2rem;
+    color: white;
+    backdrop-filter: blur(25px);
+    transition: all 0.2s ease-in 0s;
+    box-shadow: rgba(25, 16, 200, 0.3) 0px 19px 38px, rgba(31, 114, 202, 0.22) 0px 15px 12px;
+    
+}
+
+.all_events:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 190px;
+    
+}
+
+.all_events p{
+    margin-top: 20px;
+}
+
+section::before{
+    content: "";
+    height: 290vh;
+    width: 100%;
+    position: absolute;
+    background: url(../../res/bg.jpeg) no-repeat center center/cover;
+    background-attachment: fixed;
+    z-index: -1;   
+    filter: blur(1px);
+}
+
+
+
+  .heading img{
+    margin-top: 30px;
+  }
+   
+  
+
+
+
+
